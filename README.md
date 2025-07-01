@@ -273,6 +273,16 @@ find /home/n8n/logs -name "*.log" -mtime +7 -delete
 
 ---
 
+### **💡 Observação Adicional: Evolution API com PM2**
+
+Após a publicação inicial deste guia, descobri que a **Evolution API** (uma ferramenta poderosa para integração com WhatsApp) também pode ser instalada e gerenciada de forma eficiente utilizando **PM2**, seguindo uma abordagem e os princípios de otimização muito similares aos descritos aqui para o `n8n`.
+
+Isso significa que você pode estender os mesmos benefícios de **performance nativa**, **baixo consumo de recursos** (RAM e disco) e **simplicidade de gerenciamento** em seu ambiente WordOps para outras aplicações Node.js, como a Evolution API, sem a necessidade de recorrer a soluções como Docker ou Portainer.
+
+A lógica de instalação do Node.js com NVM, a configuração do PM2 (`ecosystem.config.js`) e a criação de um proxy reverso no Nginx para a Evolution API seriam análogas aos passos detalhados neste guia para o `n8n`. Esta é uma excelente notícia para quem busca manter o servidor leve, otimizado e sob controle total, reforçando a filosofia deste guia para além do n8n.
+
+---
+
 ### **Conclusão**
 
 Pronto! Você não apenas instalou uma ferramenta poderosa, mas dominou uma nova forma de integrar serviços em seu servidor, fugindo do "padrão Docker" quando a situação pede uma solução mais enxuta, performática e integrada.
